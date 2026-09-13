@@ -3,7 +3,7 @@
 📅 یادمان — دستیار یادآور و برنامه‌ریزی شخصی
 نسخه نهایی (فاز ۱ + ۲ + ۳) — آماده اجرا روی Render
 """
-import os, re, io, json, random, sqlite3
+import os, re, io, json, random, sqlite3, asyncio
 from datetime import datetime, timedelta, time as dtime
 from zoneinfo import ZoneInfo
 
