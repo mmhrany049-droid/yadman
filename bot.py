@@ -975,6 +975,7 @@ def keep_alive():
 
 # ═══════════════ اجرا ═══════════════
 def main():
+    asyncio.set_event_loop(asyncio.new_event_loop())
     init_db()
     migrate()
     app = Application.builder().token(TOKEN).build()
